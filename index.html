@@ -3,61 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umesh Kumar - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Puzzle Playground - Fun Brain Games</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Umesh Kumar</a>
-            <button class="menu-toggle" id="menuToggle">
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-puzzle-piece"></i>
+                <span>Puzzle Playground</span>
+            </div>
+
+            <nav class="desktop-nav">
+                <a href="#" class="nav-link active" data-target="welcome"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="nav-link" data-target="tic-tac-toe"><i class="fas fa-times"></i> Tic Tac Toe</a>
+                <a href="#" class="nav-link" data-target="memory-match"><i class="fas fa-brain"></i> Memory Match</a>
+                <a href="#" class="nav-link" data-target="sudoku"><i class="fas fa-th"></i> Sudoku</a>
+            </nav>
+
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
                 <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-<div class="hero-image">
-                <!-- Replace placeholder.jpg with your actual photo -->
-                <img src="ukb.png" alt="Umesh Kumar" class="profile-photo">
-                
-        </div>
-                <h1 class="hero-title">Umesh Kumar</h1>
-                <p class="hero-subtitle">Teacher & Software Developer</p>
-                <p class="hero-description">Seeking a position that will utilize my talent to enhance the growth of the organization.</p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn btn-primary">Contact Me</a>
-                    <a href="qualifications.html" class="btn btn-secondary">View Qualifications</a>
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="#" class="nav-link active" data-target="welcome"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-link" data-target="tic-tac-toe"><i class="fas fa-times"></i> Tic Tac Toe</a>
+            <a href="#" class="nav-link" data-target="memory-match"><i class="fas fa-brain"></i> Memory Match</a>
+            <a href="#" class="nav-link" data-target="sudoku"><i class="fas fa-th"></i> Sudoku</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Welcome to Puzzle Playground!</h1>
+            <p>Challenge your brain with exciting puzzle games.</p>
+        </section>
+
+        <!-- Welcome Screen -->
+        <div id="welcome" class="welcome-screen active">
+            <h2>Choose Your Game</h2>
+
+            <div class="game-cards">
+                <div class="game-card" data-target="tic-tac-toe">
+                    <div class="game-card-icon"><i class="fas fa-times"></i></div>
+                    <h3>Tic Tac Toe</h3>
+                    <button class="btn btn-primary play-game-btn" data-target="tic-tac-toe">Play</button>
                 </div>
-                
-            </div>
-            
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 Umesh Kumar. All rights reserved.</p>
-                <p>Portfolio: <a href="https://umeshsir05.github.io/umesh-sir/" target="_blank">umeshsir05.github.io/umesh-sir/</a></p>
+                <div class="game-card" data-target="memory-match">
+                    <div class="game-card-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Memory Match</h3>
+                    <button class="btn btn-primary play-game-btn" data-target="memory-match">Play</button>
+                </div>
+
+                <div class="game-card" data-target="sudoku">
+                    <div class="game-card-icon"><i class="fas fa-th"></i></div>
+                    <h3>Sudoku</h3>
+                    <button class="btn btn-primary play-game-btn" data-target="sudoku">Play</button>
+                </div>
             </div>
         </div>
-    </footer>
 
+        <!-- Games Containers -->
+        <div id="tic-tac-toe" class="game-container"></div>
+        <div id="memory-match" class="game-container"></div>
+        <div id="sudoku" class="game-container"></div>
+
+        <footer>
+            <p>Puzzle Playground © 2023</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript (same as your original code) -->
     <script src="script.js"></script>
+
 </body>
 </html>

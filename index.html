@@ -6,79 +6,363 @@
     <title>Umesh Kumar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">Umesh Kumar</a>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">U</span>
+                <span class="logo-text">Umesh<span class="logo-highlight">Kumar</span></span>
+            </a>
             <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="qualifications.html"><i class="fas fa-graduation-cap"></i> Qualifications</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        
         <div class="hero-container">
-            <div class="hero-text">
-                <h1 class="hero-title">Umesh Kumar</h1>
-                <p class="hero-subtitle">Teacher & Software Developer</p>
-                <p class="hero-description">Seeking a position that will utilize my talent to enhance the growth of the organization.</p>
-                <div class="hero-buttons">
-                    <a href="contact.html" class="btn btn-primary">Contact Me</a>
-                    <a href="qualifications.html" class="btn btn-secondary">View Qualifications</a>
+            <div class="hero-text animate__animated animate__fadeInLeft">
+                <div class="hero-badge">Teacher & Developer</div>
+                <h1 class="hero-title">Hi, I'm <span class="hero-name">Umesh Kumar</span></h1>
+                <p class="hero-subtitle">Passionate Educator & Software Developer with 8+ Years Experience</p>
+                <p class="hero-description">I blend teaching expertise with technical skills to create impactful learning experiences and software solutions that drive organizational growth.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>8+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h3>5</h3>
+                        <p>Qualifications</p>
+                    </div>
+                    <div class="stat">
+                        <h3>10+</h3>
+                        <p>Skills Mastered</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>Institutions</p>
+                    </div>
                 </div>
-                <div class="hero-contact">
-                    <p><i class="fas fa-envelope"></i> ukbanjare1989@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> 7509873448</p>
+                
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                    <a href="qualifications.html" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> View CV
+                    </a>
+                    <a href="#highlights" class="btn btn-outline">
+                        <i class="fas fa-arrow-down"></i> Explore
+                    </a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="mailto:ukbanjare1989@gmail.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:7509873448" class="social-link" title="Call">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://umeshshr05.github.io/umesh-sir/" target="_blank" class="social-link" title="Portfolio">
+                        <i class="fas fa-globe"></i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <!-- Replace placeholder.jpg with your actual photo -->
-                <img src="assets/placeholder.jpg" alt="Umesh Kumar" class="profile-photo">
-                <div class="image-caption">Umesh Kumar</div>
+            
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <div class="image-wrapper">
+                    <div class="image-frame">
+                        <!-- Replace with your actual photo -->
+                        <img src="assets/profile.jpg" alt="Umesh Kumar" class="profile-photo">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="floating-badge teaching-badge">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Teacher</span>
+                    </div>
+                    <div class="floating-badge developer-badge">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Developer</span>
+                    </div>
+                </div>
+                <div class="hero-contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <p class="contact-value">ukbanjare1989@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p class="contact-label">Phone</p>
+                            <p class="contact-value">7509873448</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#highlights">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights" id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Me?</h2>
+                <p class="section-subtitle">A unique combination of teaching excellence and technical proficiency</p>
+            </div>
+            
+            <div class="highlight-cards">
+                <div class="highlight-card">
+                    <div class="highlight-icon teaching-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Teaching Expertise</h3>
+                    <p>8+ years experience teaching computer science across CBSE schools and colleges with proven results.</p>
+                    <a href="experience.html" class="highlight-link">View Experience <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon tech-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <p>Proficient in C, C++, Java, Python, Web Development, Databases and modern software tools.</p>
+                    <a href="skills.html" class="highlight-link">View Skills <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Strong Academics</h3>
+                    <p>MCA (68.42%) with additional DEIEd qualification (77.38%) for enhanced teaching capabilities.</p>
+                    <a href="qualifications.html" class="highlight-link">View Qualifications <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="highlight-card">
+                    <div class="highlight-icon growth-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth Oriented</h3>
+                    <p>Committed to continuous learning and development to contribute to organizational success.</p>
+                    <a href="about.html" class="highlight-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Quick Info Section -->
-    <section class="quick-info">
+    <!-- Quick Stats Section -->
+    <section class="quick-stats">
         <div class="container">
-            <h2 class="section-title">Quick Overview</h2>
-            <div class="info-cards">
-                <div class="info-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Highest Qualification</h3>
-                    <p>MCA (68.42%)</p>
-                    <p>Guru Ghasidas Vishwavidyalaya</p>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <i class="fas fa-university"></i>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="3">0</h3>
+                        <p class="stat-text">Educational Institutions</p>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Teaching Experience</h3>
-                    <p>8+ Years</p>
-                    <p>Multiple Educational Institutions</p>
+                
+                <div class="stat-box">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="1000">0</h3>
+                        <p class="stat-text">Students Taught</p>
+                    </div>
                 </div>
-                <div class="info-card">
+                
+                <div class="stat-box">
                     <i class="fas fa-code"></i>
-                    <h3>Technical Skills</h3>
-                    <p>C, C++, Java, Python</p>
-                    <p>Web Development & Databases</p>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="8">0</h3>
+                        <p class="stat-text">Programming Languages</p>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>Janjgir-champa, C.G.</p>
-                    <p>India</p>
+                
+                <div class="stat-box">
+                    <i class="fas fa-trophy"></i>
+                    <div class="stat-content">
+                        <h3 class="stat-number" data-count="5">0</h3>
+                        <p class="stat-text">Academic Degrees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Skills Section -->
+    <section class="featured-skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Skills</h2>
+                <p class="section-subtitle">Core technical competencies that define my expertise</p>
+            </div>
+            
+            <div class="skills-showcase">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">C</span>
+                        <span class="skill-tag primary">C++</span>
+                        <span class="skill-tag primary">Java</span>
+                        <span class="skill-tag primary">Python</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag secondary">HTML</span>
+                        <span class="skill-tag secondary">PHP</span>
+                        <span class="skill-tag secondary">MySQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag tertiary">Visual Studio</span>
+                        <span class="skill-tag tertiary">MS Office</span>
+                        <span class="skill-tag tertiary">Windows OS</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag quaternary">Hindi</span>
+                        <span class="skill-tag quaternary">English</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-cta">
+                <a href="skills.html" class="btn btn-outline-large">
+                    <i class="fas fa-code-branch"></i> View All Skills
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Experience Section -->
+    <section class="latest-experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Teaching Journey</h2>
+                <p class="section-subtitle">My educational contributions across prestigious institutions</p>
+            </div>
+            
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="timeline-date">4 Years</div>
+                        <h3>GLD Public School Khairtal (CBSE)</h3>
+                        <p>Taught computer science following CBSE curriculum with focus on practical implementation.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="timeline-date">3 Years</div>
+                        <h3>Shri Mahant Laidas Art & Science College</h3>
+                        <p>Delivered undergraduate computer science courses with emphasis on programming fundamentals.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-date">1 Year</div>
+                        <h3>Govt. Laxmaneshwar College</h3>
+                        <p>Contributed to computer application programs in a government college setting.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experience-cta">
+                <a href="experience.html" class="btn btn-primary">
+                    <i class="fas fa-history"></i> Full Experience History
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial/Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-box">
+                <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <blockquote class="quote-text">
+                    "Seeking a position that will utilize my talent to enhance the growth of the organization."
+                </blockquote>
+                <div class="quote-author">
+                    <div class="author-details">
+                        <h4>Umesh Kumar</h4>
+                        <p>Career Objective</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Collaborate?</h2>
+                <p>Whether you're looking for a skilled educator, a software developer, or a unique combination of both, I'm ready to contribute to your success.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="about.html" class="btn btn-outline btn-large">
+                        <i class="fas fa-user"></i> Learn About Me
+                    </a>
                 </div>
             </div>
         </div>
@@ -88,32 +372,75 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Umesh Kumar</h3>
-                    <p>Teacher & Software Developer</p>
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <a href="index.html" class="logo">
+                            <span class="logo-icon">U</span>
+                            <span class="logo-text">Umesh<span class="logo-highlight">Kumar</span></span>
+                        </a>
+                        <p>Blending teaching excellence with technical expertise to drive educational and organizational success.</p>
+                        <div class="footer-social">
+                            <a href="mailto:ukbanjare1989@gmail.com" class="social-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:7509873448" class="social-icon" title="Phone">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="https://umeshshr05.github.io/umesh-sir/" target="_blank" class="social-icon" title="Portfolio">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                            <li><a href="qualifications.html"><i class="fas fa-chevron-right"></i> Qualifications</a></li>
+                            <li><a href="skills.html"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                            <li><a href="experience.html"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-contact">
+                        <h3>Contact Info</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>At+PO-Kosir, Via- Pamgarh</p>
+                                <p>Dist- Janjgir-champa, C.G. 495554</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>ukbanjare1989@gmail.com</p>
+                                <p>ukbanjare05@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>+91 7509873448</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="qualifications.html">Qualifications</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                
+                <div class="footer-bottom">
+                    <p>&copy; <span class="current-year">2025</span> Umesh Kumar. All rights reserved.</p>
+                    <p>Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> for educational and professional growth</p>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-envelope"></i> ukbanjare1989@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> 7509873448</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Kosir, Pamgarh, Janjgir-champa, C.G.</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Umesh Kumar. All rights reserved.</p>
-                <p>Portfolio: <a href="https://umeshshr05.github.io/umesh-sir/" target="_blank">umeshshr05.github.io/umesh-sir/</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>

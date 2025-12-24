@@ -3,88 +3,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puzzle Playground - Fun Brain Games</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- External CSS -->
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="header-container">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
             <div class="logo">
-                <i class="fas fa-puzzle-piece"></i>
-                <span>Puzzle Playground</span>
+                <a href="#">Portfolio<span>.</span></a>
             </div>
-
-            <nav class="desktop-nav">
-                <a href="#" class="nav-link active" data-target="welcome"><i class="fas fa-home"></i> Home</a>
-                <a href="#" class="nav-link" data-target="tic-tac-toe"><i class="fas fa-times"></i> Tic Tac Toe</a>
-                <a href="#" class="nav-link" data-target="memory-match"><i class="fas fa-brain"></i> Memory Match</a>
-                <a href="#" class="nav-link" data-target="sudoku"><i class="fas fa-th"></i> Sudoku</a>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-
-            <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                <i class="fas fa-bars"></i>
-            </div>
         </div>
-
-        <nav class="mobile-nav" id="mobileNav">
-            <a href="#" class="nav-link active" data-target="welcome"><i class="fas fa-home"></i> Home</a>
-            <a href="#" class="nav-link" data-target="tic-tac-toe"><i class="fas fa-times"></i> Tic Tac Toe</a>
-            <a href="#" class="nav-link" data-target="memory-match"><i class="fas fa-brain"></i> Memory Match</a>
-            <a href="#" class="nav-link" data-target="sudoku"><i class="fas fa-th"></i> Sudoku</a>
-        </nav>
     </header>
 
-    <div class="container">
-
-        <!-- Hero -->
-        <section class="hero">
-            <h1>Welcome to Puzzle Playground!</h1>
-            <p>Challenge your brain with exciting puzzle games.</p>
-        </section>
-
-        <!-- Welcome Screen -->
-        <div id="welcome" class="welcome-screen active">
-            <h2>Choose Your Game</h2>
-
-            <div class="game-cards">
-                <div class="game-card" data-target="tic-tac-toe">
-                    <div class="game-card-icon"><i class="fas fa-times"></i></div>
-                    <h3>Tic Tac Toe</h3>
-                    <button class="btn btn-primary play-game-btn" data-target="tic-tac-toe">Play</button>
-                </div>
-
-                <div class="game-card" data-target="memory-match">
-                    <div class="game-card-icon"><i class="fas fa-brain"></i></div>
-                    <h3>Memory Match</h3>
-                    <button class="btn btn-primary play-game-btn" data-target="memory-match">Play</button>
-                </div>
-
-                <div class="game-card" data-target="sudoku">
-                    <div class="game-card-icon"><i class="fas fa-th"></i></div>
-                    <h3>Sudoku</h3>
-                    <button class="btn btn-primary play-game-btn" data-target="sudoku">Play</button>
+    <!-- Main Content -->
+    <main>
+        <!-- Home/Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h3 class="greeting">Hello, I'm</h3>
+                        <h1 class="name">Alex Johnson</h1>
+                        <h2 class="title">Web Developer & UI/UX Designer</h2>
+                        <p class="description">I create beautiful, functional websites and applications with a focus on user experience and responsive design.</p>
+                        <a href="#contact" class="btn">Get In Touch</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Profile Picture">
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1551836026-d5c2c5af78e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="About Me">
+                    </div>
+                    <div class="about-text">
+                        <h3>Passionate Developer & Problem Solver</h3>
+                        <p>I'm a dedicated web developer with over 5 years of experience creating digital solutions for businesses and individuals. My passion lies in building intuitive, accessible, and visually appealing web experiences.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or hiking in the mountains. I believe in continuous learning and staying updated with the latest trends in web development.</p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Alex Johnson</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">alex@example.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">San Francisco, CA</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Freelance:</span>
+                                <span class="info-value">Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <div class="timeline-content">
+                                <h3>Master of Science in Computer Science</h3>
+                                <h4>Stanford University</h4>
+                                <p>Specialized in Human-Computer Interaction and Web Technologies. Graduated with honors.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2016 - 2020</div>
+                            <div class="timeline-content">
+                                <h3>Bachelor of Science in Software Engineering</h3>
+                                <h4>University of California, Berkeley</h4>
+                                <p>Focused on full-stack web development and software architecture. President of the Web Development Club.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2014 - 2016</div>
+                            <div class="timeline-content">
+                                <h3>Associate Degree in Computer Science</h3>
+                                <h4>City College of San Francisco</h4>
+                                <p>Learned fundamentals of programming, databases, and web design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-content">
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Senior Frontend Developer</h3>
+                            <span class="company">TechSolutions Inc.</span>
+                            <span class="duration">2022 - Present</span>
+                        </div>
+                        <p>Leading a team of 5 developers to create responsive web applications. Implemented modern JavaScript frameworks and improved site performance by 40%.</p>
+                        <ul class="experience-details">
+                            <li>Developed and maintained 10+ client websites</li>
+                            <li>Mentored junior developers in best practices</li>
+                            <li>Implemented CI/CD pipelines for faster deployment</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Web Developer</h3>
+                            <span class="company">Creative Digital Agency</span>
+                            <span class="duration">2020 - 2022</span>
+                        </div>
+                        <p>Created custom WordPress themes and plugins for various clients. Collaborated with designers to implement pixel-perfect UI designs.</p>
+                        <ul class="experience-details">
+                            <li>Built 30+ responsive websites for small businesses</li>
+                            <li>Improved site accessibility for all projects</li>
+                            <li>Reduced page load times by an average of 50%</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h3>Junior Web Developer</h3>
+                            <span class="company">WebStart Solutions</span>
+                            <span class="duration">2018 - 2020</span>
+                        </div>
+                        <p>Assisted in the development and maintenance of client websites. Learned modern web development practices and frameworks.</p>
+                        <ul class="experience-details">
+                            <li>Assisted in the development of 15+ websites</li>
+                            <li>Performed website testing and debugging</li>
+                            <li>Created responsive email templates for marketing campaigns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-category">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress html-css"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress javascript"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress react"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress node"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Professional Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Problem Solving</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress problem-solving"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Team Collaboration</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress collaboration"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Project Management</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress management"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Communication</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress communication"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>I'm currently available for freelance work or full-time positions. Feel free to reach out if you'd like to collaborate or just say hello!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>San Francisco, California</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>alex@example.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-codepen"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Alex Johnson. All Rights Reserved.</p>
+            <p>Designed with <i class="fas fa-heart"></i> by Me</p>
         </div>
+    </footer>
 
-        <!-- Games Containers -->
-        <div id="tic-tac-toe" class="game-container"></div>
-        <div id="memory-match" class="game-container"></div>
-        <div id="sudoku" class="game-container"></div>
-
-        <footer>
-            <p>Puzzle Playground © 2023</p>
-        </footer>
-    </div>
-
-    <!-- JavaScript (same as your original code) -->
     <script src="script.js"></script>
 </body>
 </html>

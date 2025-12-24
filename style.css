@@ -242,7 +242,7 @@ body {
     color: #555;
 }
 
-/* Education Section */
+/* Education Section - Main Page */
 .education-content {
     max-width: 800px;
     margin: 0 auto;
@@ -621,7 +621,6 @@ body {
     .personal-info {
         grid-template-columns: 1fr;
     }
-
     
     .timeline::before {
         left: 20px;
@@ -671,5 +670,3 @@ body {
         font-size: 1.8rem;
     }
 }
-
-   

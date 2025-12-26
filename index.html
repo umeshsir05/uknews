@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevChess | Portfolio</title>
+    <title>EduPortfolio | Educational Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -13,20 +13,21 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <i class="fas fa-chess-king"></i>
-                DevChess
+                <i class="fas fa-graduation-cap"></i>
+                EduPortfolio
             </div>
             <button class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-                    <li><a href="#projects"><i class="fas fa-chess-board"></i> Projects</a></li>
-                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fas fa-book"></i> Education</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -39,46 +40,64 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="gradient-text">Like Chess,</span>
+                        <span class="gradient-text">Student</span>
                         <br>
-                        I Think <span class="highlight">Several Moves Ahead</span>
+                        <span class="highlight">Portfolio</span>
                     </h1>
                     <p class="hero-subtitle">
-                        Full Stack Developer | Chess Enthusiast | Problem Solver
+                        Computer Science Student | Web Developer | Educator
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-chess-board"></i> View My Projects
+                            <i class="fas fa-laptop-code"></i> View Projects
                         </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-paper-plane"></i> Contact Me
+                        <a href="#education" class="btn btn-secondary">
+                            <i class="fas fa-graduation-cap"></i> View Education
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="chess-piece-animation">
-                        <div class="piece king">
-                            <i class="fas fa-chess-king"></i>
+                    <div class="education-animation">
+                        <div class="edu-icon">
+                            <i class="fas fa-book-open"></i>
                         </div>
-                        <div class="piece queen">
-                            <i class="fas fa-chess-queen"></i>
+                        <div class="edu-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="piece bishop">
-                            <i class="fas fa-chess-bishop"></i>
+                        <div class="edu-icon">
+                            <i class="fas fa-chart-line"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Stats -->
+            <!-- Quick Stats -->
             <div class="stats-container">
                 <div class="stat-card">
                     <div class="stat-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="stat-content">
-                        <h3 class="stat-number">50+</h3>
-                        <p class="stat-label">Projects Completed</p>
+                        <h3 class="stat-number" id="stat1">4.0</h3>
+                        <p class="stat-label">GPA Score</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="stat2">25+</h3>
+                        <p class="stat-label">Projects</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" id="stat3">15+</h3>
+                        <p class="stat-label">Certificates</p>
                     </div>
                 </div>
                 <div class="stat-card">
@@ -86,26 +105,8 @@
                         <i class="fas fa-clock"></i>
                     </div>
                     <div class="stat-content">
-                        <h3 class="stat-number">3+</h3>
-                        <p class="stat-label">Years Experience</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="stat-content">
-                        <h3 class="stat-number">100+</h3>
-                        <p class="stat-label">Happy Clients</p>
-                    </div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">
-                        <i class="fas fa-chess"></i>
-                    </div>
-                    <div class="stat-content">
-                        <h3 class="stat-number">1800</h3>
-                        <p class="stat-label">Chess Rating</p>
+                        <h3 class="stat-number" id="stat4">1000+</h3>
+                        <p class="stat-label">Learning Hours</p>
                     </div>
                 </div>
             </div>
@@ -114,78 +115,184 @@
         <!-- About Section -->
         <section id="about" class="section about-section">
             <h2 class="section-title">
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user-graduate"></i>
                 About Me
             </h2>
-            
             <div class="about-content">
-                <div class="about-image">
-                    <div class="image-container">
-                        <div class="chess-board-frame">
-                            <div class="board-grid">
-                                <!-- Chess board pattern -->
-                                <div class="board-square dark"></div>
-                                <div class="board-square light"></div>
-                                <div class="board-square dark"></div>
-                                <div class="board-square light"></div>
-                                <div class="board-square dark"></div>
-                                <div class="board-square light"></div>
-                                <div class="board-square dark"></div>
-                                <div class="board-square light"></div>
-                            </div>
+                <div class="about-header">
+                    <div class="profile-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Raj Sharma</h3>
+                        <p class="profile-title">Computer Science Student</p>
+                        <p class="profile-location">
+                            <i class="fas fa-map-marker-alt"></i> Delhi, India
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-details-grid">
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email:</strong>
+                            <span>raj.sharma@eduportfolio.com</span>
                         </div>
-                        <div class="profile-image">
-                            <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone:</strong>
+                            <span>+91 98765 43210</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <strong>University:</strong>
+                            <span>Delhi Technological University</span>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <strong>Graduation:</strong>
+                            <span>May 2025</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="about-text">
-                    <h3 class="about-name">Alex ChessMaster</h3>
-                    <p class="about-description">
-                        Just as in chess where every move matters, I approach web development with 
-                        strategic thinking and careful planning. Each line of code is a move on 
-                        the board of the digital world.
-                    </p>
-                    
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Location:</strong>
-                                <span>Mumbai, India</span>
-                            </div>
+                <div class="about-description">
+                    <p>I am a passionate Computer Science student with a keen interest in web development and educational technology. My goal is to create innovative solutions that make learning more accessible and engaging for students worldwide.</p>
+                    <p>Through my academic journey, I have developed strong problem-solving skills and a deep understanding of software development principles. I believe in continuous learning and am always excited to take on new challenges.</p>
+                </div>
+                
+                <div class="achievements">
+                    <h3 class="section-subtitle">
+                        <i class="fas fa-trophy"></i>
+                        Achievements
+                    </h3>
+                    <div class="achievement-list">
+                        <div class="achievement-item">
+                            <h4>Dean's List 2023</h4>
+                            <p>Academic excellence recognition for outstanding performance</p>
                         </div>
-                        <div class="detail-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email:</strong>
-                                <span>alex@devchess.com</span>
-                            </div>
+                        <div class="achievement-item">
+                            <h4>Hackathon Winner</h4>
+                            <p>First prize in National Level Coding Competition</p>
                         </div>
-                        <div class="detail-item">
+                        <div class="achievement-item">
+                            <h4>Research Paper Published</h4>
+                            <p>Published paper on Educational Technology in IEEE Conference</p>
+                        </div>
+                        <div class="achievement-item">
+                            <h4>Google Developer Student Club Lead</h4>
+                            <p>Leading technical community of 500+ students</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <h2 class="section-title">
+                <i class="fas fa-university"></i>
+                Education Journey
+            </h2>
+            <div class="education-container">
+                <div class="education-timeline">
+                    <!-- Education Item 1 -->
+                    <div class="education-item">
+                        <div class="education-icon">
                             <i class="fas fa-graduation-cap"></i>
-                            <div>
-                                <strong>Education:</strong>
-                                <span>B.Tech Computer Science</span>
-                            </div>
                         </div>
-                        <div class="detail-item">
-                            <i class="fas fa-chess-knight"></i>
-                            <div>
-                                <strong>Chess Level:</strong>
-                                <span>Expert (1800 ELO)</span>
+                        <div class="education-content">
+                            <span class="education-year">2021 - Present</span>
+                            <h3 class="education-degree">Bachelor of Technology in Computer Science</h3>
+                            <div class="education-institution">
+                                <i class="fas fa-university"></i>
+                                Delhi Technological University
+                            </div>
+                            <span class="education-gpa">CGPA: 9.2/10.0</span>
+                            <p class="education-description">
+                                Specializing in Web Technologies and Artificial Intelligence. 
+                                Active member of Computer Science Society and Coding Club.
+                            </p>
+                            <div class="education-courses">
+                                <h5>Key Courses:</h5>
+                                <div class="course-list">
+                                    <span class="course-tag">Data Structures</span>
+                                    <span class="course-tag">Algorithms</span>
+                                    <span class="course-tag">Web Development</span>
+                                    <span class="course-tag">Database Systems</span>
+                                    <span class="course-tag">Machine Learning</span>
+                                    <span class="course-tag">Software Engineering</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="about-philosophy">
-                        <h4><i class="fas fa-brain"></i> My Philosophy</h4>
-                        <p>
-                            "In chess and coding, success comes from anticipating challenges, 
-                            planning strategically, and executing precisely. Every problem has 
-                            multiple solutions - finding the most elegant one is the real victory."
-                        </p>
+                    <!-- Education Item 2 -->
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">2019 - 2021</span>
+                            <h3 class="education-degree">Higher Secondary Education (Class XII)</h3>
+                            <div class="education-institution">
+                                <i class="fas fa-school"></i>
+                                Delhi Public School, RK Puram
+                            </div>
+                            <span class="education-gpa">Percentage: 96.4%</span>
+                            <p class="education-description">
+                                Science Stream with Computer Science as main subject.
+                                School Topper in Computer Science.
+                            </p>
+                            <div class="education-courses">
+                                <h5>Subjects:</h5>
+                                <div class="course-list">
+                                    <span class="course-tag">Physics</span>
+                                    <span class="course-tag">Chemistry</span>
+                                    <span class="course-tag">Mathematics</span>
+                                    <span class="course-tag">Computer Science</span>
+                                    <span class="course-tag">English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Item 3 -->
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="education-content">
+                            <span class="education-year">2023</span>
+                            <h3 class="education-degree">Full Stack Web Development</h3>
+                            <div class="education-institution">
+                                <i class="fas fa-laptop-code"></i>
+                                Coursera - University of Michigan
+                            </div>
+                            <span class="education-gpa">Grade: 98%</span>
+                            <p class="education-description">
+                                Specialization covering front-end and back-end web development.
+                                Completed with honors certification.
+                            </p>
+                            <div class="education-courses">
+                                <h5>Technologies Learned:</h5>
+                                <div class="course-list">
+                                    <span class="course-tag">HTML5</span>
+                                    <span class="course-tag">CSS3</span>
+                                    <span class="course-tag">JavaScript</span>
+                                    <span class="course-tag">React.js</span>
+                                    <span class="course-tag">Node.js</span>
+                                    <span class="course-tag">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -194,39 +301,57 @@
         <!-- Skills Section -->
         <section id="skills" class="section skills-section">
             <h2 class="section-title">
-                <i class="fas fa-code"></i>
-                Technical Skills
+                <i class="fas fa-cogs"></i>
+                Skills & Competencies
             </h2>
-            
-            <div class="skills-container">
+            <div class="skills-grid">
+                <!-- Technical Skills -->
                 <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-chess-rook"></i>
-                        Frontend Development
-                    </h3>
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Technical Skills</h3>
+                    </div>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">HTML5 & CSS3</span>
-                                <span class="skill-percent">95%</span>
+                            <div class="skill-name">
+                                <span>HTML5 & CSS3</span>
+                                <span>95%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-percent">90%</span>
+                            <div class="skill-name">
+                                <span>JavaScript</span>
+                                <span>90%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">React.js</span>
-                                <span class="skill-percent">85%</span>
+                            <div class="skill-name">
+                                <span>React.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Python</span>
+                                <span>85%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 85%"></div>
@@ -235,113 +360,113 @@
                     </div>
                 </div>
                 
+                <!-- Tools & Software -->
                 <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-chess-bishop"></i>
-                        Backend Development
-                    </h3>
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Software</h3>
+                    </div>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Node.js</span>
-                                <span class="skill-percent">88%</span>
+                            <div class="skill-name">
+                                <span>Git & GitHub</span>
+                                <span>90%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-percent">82%</span>
+                            <div class="skill-name">
+                                <span>VS Code</span>
+                                <span>95%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
+                                <div class="skill-progress" style="width: 95%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">MongoDB</span>
-                                <span class="skill-percent">80%</span>
+                            <div class="skill-name">
+                                <span>Figma</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Postman</span>
+                                <span>80%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>MongoDB Compass</span>
+                                <span>78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
+                <!-- Soft Skills -->
                 <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-chess-knight"></i>
-                        Game Development
-                    </h3>
+                    <div class="category-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
                     <div class="skill-list">
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Chess Algorithms</span>
-                                <span class="skill-percent">92%</span>
+                            <div class="skill-name">
+                                <span>Problem Solving</span>
+                                <span>92%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 92%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">AI/ML for Games</span>
-                                <span class="skill-percent">78%</span>
+                            <div class="skill-name">
+                                <span>Teamwork</span>
+                                <span>88%</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 78%"></div>
+                                <div class="skill-progress" style="width: 88%"></div>
                             </div>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Game UI/UX</span>
-                                <span class="skill-percent">85%</span>
+                            <div class="skill-name">
+                                <span>Communication</span>
+                                <span>85%</span>
                             </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Soft Skills -->
-            <div class="soft-skills">
-                <h3 class="section-subtitle">
-                    <i class="fas fa-chess-queen"></i>
-                    Soft Skills
-                </h3>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-brain"></i>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Time Management</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
                         </div>
-                        <h4>Strategic Thinking</h4>
-                        <p>Planning multiple steps ahead in development</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-puzzle-piece"></i>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Leadership</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
                         </div>
-                        <h4>Problem Solving</h4>
-                        <p>Finding elegant solutions to complex challenges</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-chess-clock"></i>
-                        </div>
-                        <h4>Time Management</h4>
-                        <p>Efficient project planning and execution</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <div class="soft-skill-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h4>Team Collaboration</h4>
-                        <p>Working effectively in team environments</p>
                     </div>
                 </div>
             </div>
@@ -350,38 +475,46 @@
         <!-- Projects Section -->
         <section id="projects" class="section projects-section">
             <h2 class="section-title">
-                <i class="fas fa-chess-board"></i>
-                Featured Projects
+                <i class="fas fa-project-diagram"></i>
+                Academic Projects
             </h2>
-            
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">
-                            <i class="fas fa-chess"></i>
+                            <i class="fas fa-graduation-cap"></i>
                         </div>
                         <div class="project-badges">
-                            <span class="badge badge-primary">HTML/CSS/JS</span>
-                            <span class="badge badge-secondary">AI</span>
+                            <span class="badge badge-primary">Web Development</span>
+                            <span class="badge badge-secondary">Education</span>
                         </div>
                     </div>
-                    <h3 class="project-title">Intelligent Chess Game</h3>
+                    <h3 class="project-title">E-Learning Platform</h3>
                     <p class="project-description">
-                        A fully functional chess game with AI opponent using minimax algorithm. 
-                        Features multiple difficulty levels and move analysis.
+                        A comprehensive online learning platform with video lectures, quizzes, 
+                        and progress tracking. Built with React frontend and Node.js backend.
                     </p>
                     <div class="project-features">
-                        <span><i class="fas fa-check"></i> AI with 3 difficulty levels</span>
-                        <span><i class="fas fa-check"></i> Mobile responsive design</span>
-                        <span><i class="fas fa-check"></i> Move history & analysis</span>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>User authentication & authorization</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Interactive quizzes with auto-grading</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Progress tracking dashboard</span>
+                        </div>
                     </div>
                     <div class="project-links">
                         <a href="#" class="btn btn-sm btn-primary">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                         <a href="#" class="btn btn-sm btn-secondary">
-                            <i class="fab fa-github"></i> Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -390,29 +523,38 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">
-                            <i class="fas fa-robot"></i>
+                            <i class="fas fa-shopping-cart"></i>
                         </div>
                         <div class="project-badges">
-                            <span class="badge badge-primary">React</span>
-                            <span class="badge badge-secondary">Node.js</span>
+                            <span class="badge badge-primary">E-commerce</span>
+                            <span class="badge badge-secondary">Full Stack</span>
                         </div>
                     </div>
-                    <h3 class="project-title">Chess Learning Platform</h3>
+                    <h3 class="project-title">Online Bookstore</h3>
                     <p class="project-description">
-                        An interactive platform for learning chess strategies with video tutorials, 
-                        puzzles, and progress tracking.
+                        A full-featured e-commerce website for buying and selling books.
+                        Includes admin panel, user reviews, and payment integration.
                     </p>
                     <div class="project-features">
-                        <span><i class="fas fa-check"></i> Interactive tutorials</span>
-                        <span><i class="fas fa-check"></i> Puzzle solving system</span>
-                        <span><i class="fas fa-check"></i> Progress dashboard</span>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Secure payment gateway integration</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Admin dashboard for inventory management</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>User review and rating system</span>
+                        </div>
                     </div>
                     <div class="project-links">
                         <a href="#" class="btn btn-sm btn-primary">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
                         <a href="#" class="btn btn-sm btn-secondary">
-                            <i class="fab fa-github"></i> Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
@@ -421,38 +563,46 @@
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">
-                            <i class="fas fa-mobile-alt"></i>
+                            <i class="fas fa-chart-line"></i>
                         </div>
                         <div class="project-badges">
-                            <span class="badge badge-primary">React Native</span>
-                            <span class="badge badge-secondary">Firebase</span>
+                            <span class="badge badge-primary">Data Analysis</span>
+                            <span class="badge badge-secondary">Python</span>
                         </div>
                     </div>
-                    <h3 class="project-title">Chess Tournament App</h3>
+                    <h3 class="project-title">Student Performance Analyzer</h3>
                     <p class="project-description">
-                        Mobile application for organizing and participating in chess tournaments 
-                        with real-time matchmaking and rankings.
+                        Machine learning project to predict student performance based on 
+                        various factors and provide personalized recommendations.
                     </p>
                     <div class="project-features">
-                        <span><i class="fas fa-check"></i> Real-time matchmaking</span>
-                        <span><i class="fas fa-check"></i> Tournament management</span>
-                        <span><i class="fas fa-check"></i> Player rankings</span>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Predictive modeling with 92% accuracy</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Interactive data visualization dashboard</span>
+                        </div>
+                        <div class="project-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Personalized study recommendations</span>
+                        </div>
                     </div>
                     <div class="project-links">
                         <a href="#" class="btn btn-sm btn-primary">
-                            <i class="fas fa-external-link-alt"></i> App Store
+                            <i class="fas fa-external-link-alt"></i> View Demo
                         </a>
                         <a href="#" class="btn btn-sm btn-secondary">
-                            <i class="fab fa-github"></i> Code
+                            <i class="fab fa-github"></i> Source Code
                         </a>
                     </div>
                 </div>
             </div>
             
-            <!-- View More -->
             <div class="view-more">
                 <a href="#" class="btn btn-outline">
-                    <i class="fas fa-chess-knight"></i>
+                    <i class="fas fa-plus-circle"></i>
                     View All Projects
                 </a>
             </div>
@@ -462,78 +612,85 @@
         <section id="experience" class="section experience-section">
             <h2 class="section-title">
                 <i class="fas fa-briefcase"></i>
-                Work Experience
+                Experience & Activities
             </h2>
-            
-            <div class="timeline">
-                <!-- Experience 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Senior Frontend Developer</h3>
-                            <span class="timeline-period">2022 - Present</span>
+            <div class="experience-container">
+                <div class="experience-timeline">
+                    <!-- Experience 1 -->
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="timeline-company">
-                            <i class="fas fa-chess-king"></i>
-                            ChessTech Solutions
-                        </div>
-                        <p class="timeline-description">
-                            Lead developer for chess gaming platforms. Implemented AI algorithms 
-                            and responsive UI designs for chess applications.
-                        </p>
-                        <div class="timeline-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>WebSocket</span>
-                            <span>AI/ML</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Experience 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Full Stack Developer</h3>
-                            <span class="timeline-period">2020 - 2022</span>
-                        </div>
-                        <div class="timeline-company">
-                            <i class="fas fa-chess-queen"></i>
-                            GameDev Studio
-                        </div>
-                        <p class="timeline-description">
-                            Developed educational gaming platforms with focus on chess learning 
-                            tools and interactive tutorials.
-                        </p>
-                        <div class="timeline-tech">
-                            <span>JavaScript</span>
-                            <span>Python</span>
-                            <span>MongoDB</span>
-                            <span>Three.js</span>
+                        <div class="experience-content">
+                            <span class="experience-period">June 2023 - Present</span>
+                            <h3 class="experience-role">Web Development Intern</h3>
+                            <div class="experience-company">
+                                <i class="fas fa-building"></i>
+                                TechSolutions Pvt. Ltd.
+                            </div>
+                            <p class="experience-description">
+                                Developing responsive web applications using modern frameworks.
+                                Collaborating with senior developers on client projects and 
+                                implementing new features.
+                            </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Experience 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Web Developer</h3>
-                            <span class="timeline-period">2019 - 2020</span>
+                    
+                    <!-- Experience 2 -->
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <div class="timeline-company">
-                            <i class="fas fa-chess-rook"></i>
-                            Digital Strategy Agency
+                        <div class="experience-content">
+                            <span class="experience-period">Jan 2023 - May 2023</span>
+                            <h3 class="experience-role">Programming Tutor</h3>
+                            <div class="experience-company">
+                                <i class="fas fa-university"></i>
+                                University Coding Club
+                            </div>
+                            <p class="experience-description">
+                                Conducted weekly programming workshops for beginners.
+                                Assisted students with coding assignments and projects.
+                                Created learning materials and coding challenges.
+                            </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
                         </div>
-                        <p class="timeline-description">
-                            Created responsive websites and web applications with focus on 
-                            user experience and performance optimization.
-                        </p>
-                        <div class="timeline-tech">
-                            <span>HTML/CSS</span>
-                            <span>jQuery</span>
-                            <span>PHP</span>
-                            <span>MySQL</span>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="experience-item">
+                        <div class="experience-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="experience-content">
+                            <span class="experience-period">Aug 2022 - Present</span>
+                            <h3 class="experience-role">GDSC Lead</h3>
+                            <div class="experience-company">
+                                <i class="fab fa-google"></i>
+                                Google Developer Student Clubs
+                            </div>
+                            <p class="experience-description">
+                                Leading a community of 500+ student developers.
+                                Organizing technical workshops, hackathons, and speaker sessions.
+                                Mentoring students in web and mobile development.
+                            </p>
+                            <div class="experience-tech">
+                                <span class="tech-tag">Community</span>
+                                <span class="tech-tag">Events</span>
+                                <span class="tech-tag">Mentoring</span>
+                                <span class="tech-tag">Leadership</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -543,25 +700,23 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
             <h2 class="section-title">
-                <i class="fas fa-envelope"></i>
-                Let's Play a Move Together
+                <i class="fas fa-envelope-open-text"></i>
+                Contact Me
             </h2>
-            
             <div class="contact-container">
                 <div class="contact-info">
                     <h3 class="contact-subtitle">
-                        <i class="fas fa-chess-board"></i>
+                        <i class="fas fa-address-card"></i>
                         Get In Touch
                     </h3>
-                    
-                    <div class="contact-methods">
+                    <div class="contact-details">
                         <div class="contact-method">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="contact-details">
+                            <div class="contact-info">
                                 <h4>Email</h4>
-                                <p>alex@devchess.com</p>
+                                <p>raj.sharma@eduportfolio.com</p>
                             </div>
                         </div>
                         
@@ -569,7 +724,7 @@
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
-                            <div class="contact-details">
+                            <div class="contact-info">
                                 <h4>Phone</h4>
                                 <p>+91 98765 43210</p>
                             </div>
@@ -579,19 +734,19 @@
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="contact-details">
+                            <div class="contact-info">
                                 <h4>Location</h4>
-                                <p>Mumbai, India</p>
+                                <p>Delhi, India</p>
                             </div>
                         </div>
                         
                         <div class="contact-method">
                             <div class="contact-icon">
-                                <i class="fab fa-chess"></i>
+                                <i class="fas fa-university"></i>
                             </div>
-                            <div class="contact-details">
-                                <h4>Chess Profile</h4>
-                                <p>chess.com/DevChess</p>
+                            <div class="contact-info">
+                                <h4>University</h4>
+                                <p>Delhi Technological University</p>
                             </div>
                         </div>
                     </div>
@@ -607,7 +762,7 @@
                             <i class="fab fa-twitter"></i>
                         </a>
                         <a href="#" class="social-link">
-                            <i class="fab fa-codepen"></i>
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </div>
                 </div>
@@ -617,25 +772,24 @@
                         <i class="fas fa-paper-plane"></i>
                         Send Message
                     </h3>
-                    
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="name" placeholder="Your Name" required>
                             <i class="fas fa-user"></i>
                         </div>
                         
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="email" placeholder="Your Email" required>
                             <i class="fas fa-envelope"></i>
                         </div>
                         
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
-                            <i class="fas fa-chess"></i>
+                            <input type="text" id="subject" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
                         </div>
                         
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
                             <i class="fas fa-comment"></i>
                         </div>
                         
@@ -653,20 +807,23 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <i class="fas fa-chess-king"></i>
-                DevChess
+                <i class="fas fa-graduation-cap"></i>
+                EduPortfolio
             </div>
             <p class="footer-text">
-                "In chess as in life, every move counts. Let's make the next move together."
+                "Education is the most powerful weapon which you can use to change the world."
+                <br>- Nelson Mandela
             </p>
             <div class="footer-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
             <p class="footer-copyright">
-                © 2024 DevChess Portfolio. All rights reserved. | Made with <i class="fas fa-heart"></i> & <i class="fas fa-chess"></i>
+                © 2024 EduPortfolio. All rights reserved. 
+                Made with <i class="fas fa-heart"></i> by Raj Sharma
             </p>
         </div>
     </footer>

@@ -3,68 +3,671 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>DevChess | Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
     <!-- Navigation -->
-    <header class="header">
-        <div class="container">
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="logo">
-                <a href="#">Portfolio<span>.</span></a>
+                <i class="fas fa-chess-king"></i>
+                DevChess
             </div>
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="education.html" class="nav-link">Education</a></li>
-                    <li><a href="experience.html" class="nav-link">Experience</a></li>
-                    <li><a href="skills.html" class="nav-link">Skills</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-chess-board"></i> Projects</a></li>
+                    <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home/Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h3 class="greeting">Hello, I'm</h3>
-                        <h1 class="name">Umesh Banjare</h1>
-                        <h2 class="title">Web Developer & Educator</h2>
-                        <p class="description">I create beautiful, functional websites and applications with a focus on user experience and responsive design.</p>
-                       
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Like Chess,</span>
+                        <br>
+                        I Think <span class="highlight">Several Moves Ahead</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Full Stack Developer | Chess Enthusiast | Problem Solver
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-chess-board"></i> View My Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
                     </div>
-                    <div class="hero-image">
-                        <img src="ukb.png" alt="Profile Picture">
+                </div>
+                <div class="hero-image">
+                    <div class="chess-piece-animation">
+                        <div class="piece king">
+                            <i class="fas fa-chess-king"></i>
+                        </div>
+                        <div class="piece queen">
+                            <i class="fas fa-chess-queen"></i>
+                        </div>
+                        <div class="piece bishop">
+                            <i class="fas fa-chess-bishop"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-     <a href="#contact" class="btn">Get In Touch</a>                </div>
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">3+</h3>
+                        <p class="stat-label">Years Experience</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">100+</h3>
+                        <p class="stat-label">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">1800</h3>
+                        <p class="stat-label">Chess Rating</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title">
+                <i class="fas fa-user"></i>
+                About Me
+            </h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="chess-board-frame">
+                            <div class="board-grid">
+                                <!-- Chess board pattern -->
+                                <div class="board-square dark"></div>
+                                <div class="board-square light"></div>
+                                <div class="board-square dark"></div>
+                                <div class="board-square light"></div>
+                                <div class="board-square dark"></div>
+                                <div class="board-square light"></div>
+                                <div class="board-square dark"></div>
+                                <div class="board-square light"></div>
+                            </div>
+                        </div>
+                        <div class="profile-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-name">Alex ChessMaster</h3>
+                    <p class="about-description">
+                        Just as in chess where every move matters, I approach web development with 
+                        strategic thinking and careful planning. Each line of code is a move on 
+                        the board of the digital world.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location:</strong>
+                                <span>Mumbai, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <span>alex@devchess.com</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>Education:</strong>
+                                <span>B.Tech Computer Science</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-chess-knight"></i>
+                            <div>
+                                <strong>Chess Level:</strong>
+                                <span>Expert (1800 ELO)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-philosophy">
+                        <h4><i class="fas fa-brain"></i> My Philosophy</h4>
+                        <p>
+                            "In chess and coding, success comes from anticipating challenges, 
+                            planning strategically, and executing precisely. Every problem has 
+                            multiple solutions - finding the most elegant one is the real victory."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                Technical Skills
+            </h2>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chess-rook"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chess-bishop"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MongoDB</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chess-knight"></i>
+                        Game Development
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Chess Algorithms</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">AI/ML for Games</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Game UI/UX</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Soft Skills -->
+            <div class="soft-skills">
+                <h3 class="section-subtitle">
+                    <i class="fas fa-chess-queen"></i>
+                    Soft Skills
+                </h3>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Strategic Thinking</h4>
+                        <p>Planning multiple steps ahead in development</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4>Problem Solving</h4>
+                        <p>Finding elegant solutions to complex challenges</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-chess-clock"></i>
+                        </div>
+                        <h4>Time Management</h4>
+                        <p>Efficient project planning and execution</p>
+                    </div>
+                    <div class="soft-skill-card">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Team Collaboration</h4>
+                        <p>Working effectively in team environments</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">
+                <i class="fas fa-chess-board"></i>
+                Featured Projects
+            </h2>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        <div class="project-badges">
+                            <span class="badge badge-primary">HTML/CSS/JS</span>
+                            <span class="badge badge-secondary">AI</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Intelligent Chess Game</h3>
+                    <p class="project-description">
+                        A fully functional chess game with AI opponent using minimax algorithm. 
+                        Features multiple difficulty levels and move analysis.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check"></i> AI with 3 difficulty levels</span>
+                        <span><i class="fas fa-check"></i> Mobile responsive design</span>
+                        <span><i class="fas fa-check"></i> Move history & analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="btn btn-sm btn-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-badges">
+                            <span class="badge badge-primary">React</span>
+                            <span class="badge badge-secondary">Node.js</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Chess Learning Platform</h3>
+                    <p class="project-description">
+                        An interactive platform for learning chess strategies with video tutorials, 
+                        puzzles, and progress tracking.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check"></i> Interactive tutorials</span>
+                        <span><i class="fas fa-check"></i> Puzzle solving system</span>
+                        <span><i class="fas fa-check"></i> Progress dashboard</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="#" class="btn btn-sm btn-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-badges">
+                            <span class="badge badge-primary">React Native</span>
+                            <span class="badge badge-secondary">Firebase</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Chess Tournament App</h3>
+                    <p class="project-description">
+                        Mobile application for organizing and participating in chess tournaments 
+                        with real-time matchmaking and rankings.
+                    </p>
+                    <div class="project-features">
+                        <span><i class="fas fa-check"></i> Real-time matchmaking</span>
+                        <span><i class="fas fa-check"></i> Tournament management</span>
+                        <span><i class="fas fa-check"></i> Player rankings</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-sm btn-primary">
+                            <i class="fas fa-external-link-alt"></i> App Store
+                        </a>
+                        <a href="#" class="btn btn-sm btn-secondary">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More -->
+            <div class="view-more">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-chess-knight"></i>
+                    View All Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <h2 class="section-title">
+                <i class="fas fa-briefcase"></i>
+                Work Experience
+            </h2>
+            
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Senior Frontend Developer</h3>
+                            <span class="timeline-period">2022 - Present</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-chess-king"></i>
+                            ChessTech Solutions
+                        </div>
+                        <p class="timeline-description">
+                            Lead developer for chess gaming platforms. Implemented AI algorithms 
+                            and responsive UI designs for chess applications.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>WebSocket</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <span class="timeline-period">2020 - 2022</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-chess-queen"></i>
+                            GameDev Studio
+                        </div>
+                        <p class="timeline-description">
+                            Developed educational gaming platforms with focus on chess learning 
+                            tools and interactive tutorials.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>MongoDB</span>
+                            <span>Three.js</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Web Developer</h3>
+                            <span class="timeline-period">2019 - 2020</span>
+                        </div>
+                        <div class="timeline-company">
+                            <i class="fas fa-chess-rook"></i>
+                            Digital Strategy Agency
+                        </div>
+                        <p class="timeline-description">
+                            Created responsive websites and web applications with focus on 
+                            user experience and performance optimization.
+                        </p>
+                        <div class="timeline-tech">
+                            <span>HTML/CSS</span>
+                            <span>jQuery</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i>
+                Let's Play a Move Together
+            </h2>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">
+                        <i class="fas fa-chess-board"></i>
+                        Get In Touch
+                    </h3>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>alex@devchess.com</p>
+                            </div>
+                        </div>
                         
-                            
-        
-    </main>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-chess"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Chess Profile</h4>
+                                <p>chess.com/DevChess</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="contact-subtitle">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                            <i class="fas fa-chess"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Umesh Banjare . All Rights Reserved.</p>
-            <p>Designed with <i class="fas fa-heart"></i> by Me</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-chess-king"></i>
+                DevChess
+            </div>
+            <p class="footer-text">
+                "In chess as in life, every move counts. Let's make the next move together."
+            </p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copyright">
+                © 2024 DevChess Portfolio. All rights reserved. | Made with <i class="fas fa-heart"></i> & <i class="fas fa-chess"></i>
+            </p>
         </div>
     </footer>
 

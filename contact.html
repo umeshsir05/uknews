@@ -3,166 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | EduPortfolio</title>
+    <title>Umesh Banjare | Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <header>
+        <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+                <a href="index.html">Umesh<span>Banjare</span></a>
             </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-menu" id="navMenu">
+            <div class="nav-links">
                 <ul>
-                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="education.html" class="nav-link"><i class="fas fa-book"></i> Education</a></li>
-                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                    <li><a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </header>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-            <h2 class="section-title">
-                <i class="fas fa-envelope-open-text"></i>
-                Contact Me
-            </h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3 class="contact-subtitle">
-                        <i class="fas fa-address-card"></i>
-                        Get In Touch
-                    </h3>
-                    <div class="contact-details">
-                        <div class="contact-method">
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1 class="page-title">Contact Me</h1>
+                <p class="page-subtitle">If you have any questions or would like to get in touch, feel free to reach out!</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="contact-info">
-                                <h4>Email</h4>
-                                <p>raj.sharma@eduportfolio.com</p>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:ukbanjare1989@gmail.com" class="contact-link">ukbanjare1989@gmail.com</a>
+                                <p>Primary email for professional inquiries</p>
                             </div>
                         </div>
                         
-                        <div class="contact-method">
+                        <div class="contact-card">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
-                            <div class="contact-info">
-                                <h4>Phone</h4>
-                                <p>+91 98765 43210</p>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <a href="tel:+917509873448" class="contact-link">+91 7509873448</a>
+                                <p>Available for calls during business hours</p>
                             </div>
                         </div>
                         
-                        <div class="contact-method">
+                        <div class="contact-card">
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="contact-info">
-                                <h4>Location</h4>
-                                <p>Delhi, India</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <i class="fas fa-university"></i>
-                            </div>
-                            <div class="contact-info">
-                                <h4>University</h4>
-                                <p>Delhi Technological University</p>
+                            <div class="contact-details">
+                                <h3>Address</h3>
+                                <p class="address-text">
+                                    At+PO-Kosir, Via-Pamgarh<br>
+                                    Dist-Janjgir-Champa, Chhattisgarh<br>
+                                    Pin: 495554
+                                </p>
+                                <p>Based in Chhattisgarh, India</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <div class="contact-form-section">
+                        <div class="contact-form-card">
+                            <h2>Send a Message</h2>
+                            <p>Feel free to send me a message directly using the form below.</p>
+                            
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Enter your message here..."></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn submit-btn">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                                
+                                <div class="form-notification" id="formNotification"></div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="contact-form">
-                    <h3 class="contact-subtitle">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Message
-                    </h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                            <i class="fas fa-user"></i>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="text" id="subject" placeholder="Subject" required>
-                            <i class="fas fa-tag"></i>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                            <i class="fas fa-comment"></i>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
                 </div>
             </div>
         </section>
-    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+        <section class="contact-map">
+            <div class="container">
+                <div class="map-card">
+                    <h2><i class="fas fa-map-marked-alt"></i> Location</h2>
+                    <p>Janjgir-Champa district is located in the central part of Chhattisgarh, known for its educational institutions and cultural heritage.</p>
+                    
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <i class="fas fa-map"></i>
+                            <h3>Janjgir-Champa, Chhattisgarh</h3>
+                            <p>Located in central India, known for its educational institutions</p>
+                            <div class="location-details">
+                                <p><strong>Nearest Cities:</strong> Raipur, Bilaspur</p>
+                                <p><strong>Region:</strong> Central Chhattisgarh</p>
+                                <p><strong>Area Code:</strong> 495554</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="footer-text">
-                "Education is the most powerful weapon which you can use to change the world."
-                <br>- Nelson Mandela
-            </p>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="education.html">Education</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Umesh Banjare. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <p class="footer-copyright">
-                © 2024 EduPortfolio. All rights reserved. 
-                Made with <i class="fas fa-heart"></i> by Raj Sharma
-            </p>
         </div>
     </footer>
 

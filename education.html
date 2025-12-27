@@ -3,164 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education | EduPortfolio</title>
+    <title>Umesh Banjare | Education</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <header>
+        <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+                <a href="index.html">Umesh<span>Banjare</span></a>
             </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-menu" id="navMenu">
+            <div class="nav-links">
                 <ul>
-                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="education.html" class="nav-link active"><i class="fas fa-book"></i> Education</a></li>
-                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                    <li><a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html" class="active">Education</a></li>
                 </ul>
             </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+            </ul>
         </div>
-    </nav>
+    </header>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Education Section -->
-        <section id="education" class="section education-section">
-            <h2 class="section-title">
-                <i class="fas fa-university"></i>
-                Education Journey
-            </h2>
-            <div class="education-container">
-                <div class="education-timeline">
-                    <!-- Education Item 1 -->
-                    <div class="education-item">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-content">
-                            <span class="education-year">2021 - Present</span>
-                            <h3 class="education-degree">Bachelor of Technology in Computer Science</h3>
-                            <div class="education-institution">
-                                <i class="fas fa-university"></i>
-                                Delhi Technological University
-                            </div>
-                            <span class="education-gpa">CGPA: 9.2/10.0</span>
-                            <p class="education-description">
-                                Specializing in Web Technologies and Artificial Intelligence. 
-                                Active member of Computer Science Society and Coding Club.
-                            </p>
-                            <div class="education-courses">
-                                <h5>Key Courses:</h5>
-                                <div class="course-list">
-                                    <span class="course-tag">Data Structures</span>
-                                    <span class="course-tag">Algorithms</span>
-                                    <span class="course-tag">Web Development</span>
-                                    <span class="course-tag">Database Systems</span>
-                                    <span class="course-tag">Machine Learning</span>
-                                    <span class="course-tag">Software Engineering</span>
-                                </div>
-                            </div>
+    <main>
+        <section class="education-hero">
+            <div class="container">
+                <h1 class="page-title">Education & Qualifications</h1>
+                <p class="page-subtitle">Academic background and professional certifications</p>
+            </div>
+        </section>
+
+        <section class="education-timeline">
+            <div class="container">
+                <h2 class="section-title">Academic Journey</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>Master of Computer Applications</h3>
+                            <h4>University of Technology</h4>
+                            <p>Specialized in web technologies and software development. Completed thesis on "Modern Web Development Practices in Education".</p>
                         </div>
                     </div>
                     
-                    <!-- Education Item 2 -->
-                    <div class="education-item">
-                        <div class="education-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <div class="education-content">
-                            <span class="education-year">2019 - 2021</span>
-                            <h3 class="education-degree">Higher Secondary Education (Class XII)</h3>
-                            <div class="education-institution">
-                                <i class="fas fa-school"></i>
-                                Delhi Public School, RK Puram
-                            </div>
-                            <span class="education-gpa">Percentage: 96.4%</span>
-                            <p class="education-description">
-                                Science Stream with Computer Science as main subject.
-                                School Topper in Computer Science.
-                            </p>
-                            <div class="education-courses">
-                                <h5>Subjects:</h5>
-                                <div class="course-list">
-                                    <span class="course-tag">Physics</span>
-                                    <span class="course-tag">Chemistry</span>
-                                    <span class="course-tag">Mathematics</span>
-                                    <span class="course-tag">Computer Science</span>
-                                    <span class="course-tag">English</span>
-                                </div>
-                            </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2017 - 2020</div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Science in Computer Science</h3>
+                            <h4>State University</h4>
+                            <p>Graduated with honors. Focused on programming fundamentals, databases, and computer networks.</p>
                         </div>
                     </div>
                     
-                    <!-- Education Item 3 -->
-                    <div class="education-item">
-                        <div class="education-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <div class="education-content">
-                            <span class="education-year">2023</span>
-                            <h3 class="education-degree">Full Stack Web Development</h3>
-                            <div class="education-institution">
-                                <i class="fas fa-laptop-code"></i>
-                                Coursera - University of Michigan
-                            </div>
-                            <span class="education-gpa">Grade: 98%</span>
-                            <p class="education-description">
-                                Specialization covering front-end and back-end web development.
-                                Completed with honors certification.
-                            </p>
-                            <div class="education-courses">
-                                <h5>Technologies Learned:</h5>
-                                <div class="course-list">
-                                    <span class="course-tag">HTML5</span>
-                                    <span class="course-tag">CSS3</span>
-                                    <span class="course-tag">JavaScript</span>
-                                    <span class="course-tag">React.js</span>
-                                    <span class="course-tag">Node.js</span>
-                                    <span class="course-tag">MongoDB</span>
-                                </div>
-                            </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2016 - 2017</div>
+                        <div class="timeline-content">
+                            <h3>Diploma in Education Technology</h3>
+                            <h4>Institute of Education</h4>
+                            <p>Specialized in integrating technology into educational settings and curriculum development.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+        <section class="certifications">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certification-grid">
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Full Stack Web Development</h3>
+                        <p>Certification in modern web development technologies including React, Node.js, and MongoDB.</p>
+                    </div>
+                    
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Teaching Proficiency</h3>
+                        <p>Certified educator with specialization in STEM subjects and technology integration.</p>
+                    </div>
+                    
+                    <div class="certification-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>JavaScript Algorithms & Data Structures</h3>
+                        <p>Advanced certification in JavaScript programming and algorithmic thinking.</p>
+                    </div>
+                </div>
             </div>
-            <p class="footer-text">
-                "Education is the most powerful weapon which you can use to change the world."
-                <br>- Nelson Mandela
-            </p>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="education.html">Education</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+        </section>
+
+        <section class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Teaching & Training</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Curriculum Development</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p class="footer-copyright">
-                © 2024 EduPortfolio. All rights reserved. 
-                Made with <i class="fas fa-heart"></i> by Raj Sharma
-            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Umesh Banjare. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 

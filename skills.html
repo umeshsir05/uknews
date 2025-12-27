@@ -3,235 +3,426 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills | EduPortfolio</title>
+    <title>Umesh Banjare | Skills</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <header>
+        <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+                <a href="index.html">Umesh<span>Banjare</span></a>
             </div>
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-menu" id="navMenu">
+            <div class="nav-links">
                 <ul>
-                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="education.html" class="nav-link"><i class="fas fa-book"></i> Education</a></li>
-                    <li><a href="skills.html" class="nav-link active"><i class="fas fa-code"></i> Skills</a></li>
-                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                    <li><a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="skills.html" class="active"><i class="fas fa-code"></i> Skills</a></li>
                 </ul>
             </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="skills.html" class="active"><i class="fas fa-code"></i> Skills</a></li>
+            </ul>
         </div>
-    </nav>
+    </header>
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Skills Section -->
-        <section id="skills" class="section skills-section">
-            <h2 class="section-title">
-                <i class="fas fa-cogs"></i>
-                Skills & Competencies
-            </h2>
-            <div class="skills-grid">
+    <main>
+        <section class="skills-hero">
+            <div class="container">
+                <h1 class="page-title">Skills & Expertise</h1>
+                <p class="page-subtitle">Below is a detailed overview of my technical, teaching, and personal development skills</p>
+            </div>
+        </section>
+
+        <section class="skills-categories">
+            <div class="container">
                 <!-- Technical Skills -->
-                <div class="skill-category">
+                <div class="skills-category">
                     <div class="category-header">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Technical Skills</h3>
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h2>Technical Skills</h2>
+                        <p class="category-subtitle">Proficient in modern technologies and tools</p>
                     </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>HTML5 & CSS3</span>
-                                <span>95%</span>
+                    
+                    <div class="skills-grid">
+                        <!-- Programming Skills -->
+                        <div class="skill-group">
+                            <div class="skill-group-header">
+                                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                                <p class="skill-group-desc">Strong foundation in multiple programming languages</p>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                            <div class="skill-items">
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">C</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">C++</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">Java</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">Python</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Intermediate</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>JavaScript</span>
-                                <span>90%</span>
+                        
+                        <!-- Web Development Skills -->
+                        <div class="skill-group">
+                            <div class="skill-group-header">
+                                <h3><i class="fas fa-globe"></i> Web Development</h3>
+                                <p class="skill-group-desc">Front-end and back-end web technologies</p>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                            <div class="skill-items">
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">PHP</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">HTML</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                        </div>
+                                        <span class="level-text">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">CSS</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                        </div>
+                                        <span class="level-text">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">JavaScript</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>React.js</span>
-                                <span>85%</span>
+                        
+                        <!-- Database & Tools -->
+                        <div class="skill-group">
+                            <div class="skill-group-header">
+                                <h3><i class="fas fa-database"></i> Database & IT Tools</h3>
+                                <p class="skill-group-desc">Database management and productivity tools</p>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Node.js</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Python</span>
-                                <span>85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
+                            <div class="skill-items">
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">MySQL</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">MS Office Suite</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                        </div>
+                                        <span class="level-text">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">LibreOffice Suite</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                        </div>
+                                        <span class="level-text">Expert</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item-detailed">
+                                    <div class="skill-name">Operating Systems</div>
+                                    <div class="skill-level">
+                                        <div class="skill-dots">
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot active"></div>
+                                            <div class="dot"></div>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Tools & Software -->
-                <div class="skill-category">
+                <!-- Teaching Expertise -->
+                <div class="skills-category">
                     <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>Tools & Software</h3>
+                        <div class="category-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h2>Teaching Expertise</h2>
+                        <p class="category-subtitle">Experienced in modern pedagogical approaches</p>
                     </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Git & GitHub</span>
-                                <span>90%</span>
+                    
+                    <div class="teaching-skills">
+                        <div class="teaching-item">
+                            <div class="teaching-icon">
+                                <i class="fas fa-book-open"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>VS Code</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                            <div class="teaching-content">
+                                <h3>CBSE IT 402 Curriculum</h3>
+                                <p>Delivering IT lessons for Class 9th and 10th (CBSE IT 402) with comprehensive coverage of syllabus</p>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Figma</span>
-                                <span>75%</span>
+                        
+                        <div class="teaching-item">
+                            <div class="teaching-icon">
+                                <i class="fas fa-users"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Postman</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
+                            <div class="teaching-content">
+                                <h3>Student-Centric Approach</h3>
+                                <p>Fostering a student-centric, interactive learning environment that encourages participation and curiosity</p>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>MongoDB Compass</span>
-                                <span>78%</span>
+                        
+                        <div class="teaching-item">
+                            <div class="teaching-icon">
+                                <i class="fas fa-handshake"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 78%"></div>
+                            <div class="teaching-content">
+                                <h3>Accessible Technology</h3>
+                                <p>Making technology accessible for beginners through simplified explanations and practical examples</p>
+                            </div>
+                        </div>
+                        
+                        <div class="teaching-item">
+                            <div class="teaching-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="teaching-content">
+                                <h3>DElEd Methodologies</h3>
+                                <p>Utilizing DElEd teaching methodologies to create effective lesson plans and assessment strategies</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Soft Skills -->
-                <div class="skill-category">
+                <!-- Communication Skills -->
+                <div class="skills-category">
                     <div class="category-header">
-                        <i class="fas fa-users"></i>
-                        <h3>Soft Skills</h3>
+                        <div class="category-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h2>Communication Skills</h2>
+                        <p class="category-subtitle">Effective verbal and written communication abilities</p>
                     </div>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Problem Solving</span>
-                                <span>92%</span>
+                    
+                    <div class="communication-skills">
+                        <div class="comm-item learning">
+                            <div class="comm-icon">
+                                <i class="fas fa-language"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Teamwork</span>
-                                <span>88%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                            <div class="comm-content">
+                                <h3>Currently Learning</h3>
+                                <p><strong>Spoken English:</strong> Actively working on enhancing English communication skills for professional development</p>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Communication</span>
-                                <span>85%</span>
+                        
+                        <div class="comm-item proficient">
+                            <div class="comm-icon">
+                                <i class="fas fa-file-alt"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Time Management</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
+                            <div class="comm-content">
+                                <h3>Strong Written Communication</h3>
+                                <p>Proficient in both Hindi and English for documentation, reports, and educational materials</p>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-name">
-                                <span>Leadership</span>
-                                <span>82%</span>
+                        
+                        <div class="comm-item proficient">
+                            <div class="comm-icon">
+                                <i class="fas fa-microphone"></i>
                             </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
+                            <div class="comm-content">
+                                <h3>Verbal Communication</h3>
+                                <p>Effective verbal communication in both Hindi and English for teaching and professional interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personal Development -->
+                <div class="skills-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h2>Personal Development</h2>
+                        <p class="category-subtitle">Passionate about continuous growth and balanced living</p>
+                    </div>
+                    
+                    <div class="personal-development">
+                        <div class="personal-item">
+                            <div class="personal-icon">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <div class="personal-content">
+                                <h3>Continuous Learning</h3>
+                                <p>Dedicated to continuous learning and upskilling in both technology and education fields</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-item">
+                            <div class="personal-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <div class="personal-content">
+                                <h3>Reading Habit</h3>
+                                <p>Regular reading of books on self-improvement, technology, and educational methodologies</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-item">
+                            <div class="personal-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="personal-content">
+                                <h3>Music & Sports</h3>
+                                <p>Engaging in music and sports activities for maintaining a balanced and healthy lifestyle</p>
+                            </div>
+                        </div>
+                        
+                        <div class="personal-item">
+                            <div class="personal-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="personal-content">
+                                <h3>Language Practice</h3>
+                                <p>Learning and practicing Spoken English regularly for effective communication and professional growth</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+        
+        <section class="skills-summary">
+            <div class="container">
+                <div class="summary-card">
+                    <h2><i class="fas fa-star"></i> Skills Summary</h2>
+                    <p>My skillset represents a unique blend of technical expertise and teaching proficiency, allowing me to bridge the gap between technology and education effectively. With strong foundations in programming, web development, and database management combined with pedagogical skills and communication abilities, I am well-equipped to create engaging learning experiences and contribute to both technical and educational projects.</p>
+                    <p>My commitment to continuous personal and professional development ensures that I stay current with emerging technologies and teaching methodologies.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Umesh Banjare. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
-            <p class="footer-text">
-                "Education is the most powerful weapon which you can use to change the world."
-                <br>- Nelson Mandela
-            </p>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="education.html">Education</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p class="footer-copyright">
-                © 2024 EduPortfolio. All rights reserved. 
-                Made with <i class="fas fa-heart"></i> by Raj Sharma
-            </p>
         </div>
     </footer>
 

@@ -147,7 +147,21 @@ header {
 }
 
 /* Mobile Menu */
-   /* Mobile Menu with Icons */
+.mobile-menu {
+    display: none;
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
 .mobile-menu ul {
     list-style: none;
     padding: 1rem 0;
@@ -158,79 +172,21 @@ header {
 }
 
 .mobile-menu a {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    display: block;
     padding: 1rem 2rem;
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
     border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s;
-}
-
-.mobile-menu a i {
-    width: 20px;
-    text-align: center;
-    font-size: 1.1rem;
 }
 
 .mobile-menu a:hover, .mobile-menu a.active {
     color: var(--primary-color);
     background-color: rgba(0, 0, 0, 0.03);
-    padding-left: 2.5rem;
 }
 
 .dark-mode .mobile-menu a:hover, .dark-mode .mobile-menu a.active {
     background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Desktop Navigation Icons */
-.nav-links a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    padding: 0.5rem 0;
-    position: relative;
-    transition: color 0.3s;
-}
-
-.nav-links a i {
-    font-size: 1rem;
-}
-
-/* Navigation Controls */
-.nav-controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.theme-toggle, .menu-toggle {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    color: var(--text-color);
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-}
-
-.theme-toggle:hover, .menu-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.dark-mode .theme-toggle:hover, .dark-mode .menu-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Main Content */
@@ -721,84 +677,4 @@ footer p {
         width: 250px;
         height: 250px;
     }
-}
-
-/* Education Details Styles */
-.education-details {
-    background-color: rgba(74, 111, 165, 0.1);
-    padding: 1rem;
-    border-radius: 8px;
-    margin: 1rem 0;
-}
-
-.dark-mode .education-details {
-    background-color: rgba(109, 158, 230, 0.1);
-}
-
-.detail-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-}
-
-.detail-row:last-child {
-    margin-bottom: 0;
-}
-
-.detail-label {
-    font-weight: 600;
-    color: var(--secondary-color);
-}
-
-.detail-value {
-    color: var(--text-color);
-}
-
-.detail-value.highlight {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
-/* Education Summary Section */
-.education-summary {
-    padding: 4rem 0;
-    background-color: var(--card-bg);
-}
-
-.summary-card {
-    background-color: var(--bg-color);
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.dark-mode .summary-card {
-    background-color: rgba(30, 30, 30, 0.8);
-}
-
-.summary-card h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.summary-card p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-    color: var(--light-text);
-}
-
-.summary-card p:last-child {
-    margin-bottom: 0;
-}
-
-/* Timeline Item Adjustments */
-.timeline-content p {
-    margin-top: 1rem;
-    color: var(--light-text);
 }

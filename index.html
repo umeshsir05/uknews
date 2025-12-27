@@ -3,130 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umesh Banjare | Educator & Web Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600&display=swap">
+    <title>Umesh Banjare | Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <header>
+        <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                EduPortfolio
+                <a href="index.html">Umesh<span>Banjare</span></a>
             </div>
-            
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <div class="nav-menu" id="navMenu">
+            <div class="nav-links">
                 <ul>
-                    <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="about.html" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-                    <li><a href="education.html" class="nav-link"><i class="fas fa-book"></i> Education</a></li>
-                    <li><a href="skills.html" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-                    <li><a href="projects.html" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
-                    <li><a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
                 </ul>
             </div>
-        </div>
-    </nav>
-
-   <!-- Header Section -->
-<header class="profile-header" id="home">
-    <div class="container header-content">
-        <div class="profile-section">
-            <div class="profile-photo">
-                <img src="1000342172.jpg" alt="Umesh Banjare">
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-            <div class="profile-info">
-                <h2 class="greeting">Hi, I'm</h2>
-                <h1 class="profile-name">Umesh Banjare</h1>
-                <h2 class="profile-title">Educator & Web Developer</h2>
-                <p class="tagline">
-                    Passionate about education, programming, and learning new skills. Experienced in IT, web development, and teaching.
-                </p>
-                <a href="#" class="download-btn">
-                    <i class="fas fa-download"></i> Download CV
-                </a>
-            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+            </ul>
         </div>
-    </div>
-</header>
+    </header>
 
-    <div class="container">
-        <!-- About Section -->
-        <section id="about" class="content-section">
-            <div class="main-content">
-                <h2 class="section-title">About Me</h2>
-                <div class="section-content">
-                    <p>
-                        Hello! I'm Umesh Banjare, a dedicated educator and web developer with a strong passion for 
-                        creating meaningful educational experiences and innovative web solutions.
-                    </p>
-                    
-                    <div class="highlight-box">
-                        <h3>My Philosophy</h3>
-                        <p>
-                            I believe that education and technology are powerful tools for empowerment. 
-                            By combining effective teaching methodologies with cutting-edge web technologies, 
-                            I strive to create learning experiences that are engaging, accessible, and transformative.
-                        </p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Umesh Banjare">
+                        </div>
+                        <div class="hero-text">
+                            <h3>Hi, I'm</h3>
+                            <h1>Umesh Banjare</h1>
+                            <h2>Educator & Web Developer</h2>
+                            <p>Passionate about education, programming, and learning new skills. Experienced in IT, web development, and teaching.</p>
+                            <div class="hero-buttons">
+                                <a href="about.html" class="btn">Learn More</a>
+                                <a href="education.html" class="btn btn-outline">My Education</a>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <p>
-                        With extensive experience in both IT and education sectors, I've developed a unique 
-                        perspective that allows me to bridge the gap between technical implementation and 
-                        effective knowledge transfer.
-                    </p>
                 </div>
+            </div>
+        </section>
 
-               
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">What I Do</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Teaching</h3>
+                        <p>Creating engaging learning experiences and sharing knowledge with students.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive, user-friendly websites and web applications.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Skill Development</h3>
+                        <p>Continuously learning and mastering new technologies and methodologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-       
-                        
-                    
-    <!-- Dark Mode Toggle at Bottom -->
-    <div class="dark-mode-toggle-container">
-        <button class="theme-toggle" id="themeToggle">
-            <i class="fas fa-moon"></i>
-        </button>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-graduation-cap"></i> EduPortfolio
-                </div>
-                <p class="footer-quote">
-                    "Education is the most powerful weapon which you can use to change the world."
-                    <br>- Nelson Mandela
-                </p>
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="social-link">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-                
-                <p class="copyright">
-                    © 2025 EduPortfolio. All rights reserved. 
-                    Developed by Umesh Banjare
-                </p>
+            <p>&copy; 2023 Umesh Banjare. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>

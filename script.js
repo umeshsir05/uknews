@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setActiveLink();
     updateThemeIcon();
 });
-
 // Close mobile menu when clicking outside
 document.addEventListener('click', (event) => {
     if (mobileMenu && menuToggle && 

@@ -678,3 +678,83 @@ footer p {
         height: 250px;
     }
 }
+
+/* Education Details Styles */
+.education-details {
+    background-color: rgba(74, 111, 165, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.dark-mode .education-details {
+    background-color: rgba(109, 158, 230, 0.1);
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.detail-value {
+    color: var(--text-color);
+}
+
+.detail-value.highlight {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* Education Summary Section */
+.education-summary {
+    padding: 4rem 0;
+    background-color: var(--card-bg);
+}
+
+.summary-card {
+    background-color: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dark-mode .summary-card {
+    background-color: rgba(30, 30, 30, 0.8);
+}
+
+.summary-card h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.summary-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--light-text);
+}
+
+.summary-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline Item Adjustments */
+.timeline-content p {
+    margin-top: 1rem;
+    color: var(--light-text);
+}

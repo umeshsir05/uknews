@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umesh Banjare | Training & Certifications</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Umesh<span>Banjare</span></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="training.html" class="active"><i class="fas fa-certificate"></i> Training</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="training.html" class="active"><i class="fas fa-certificate"></i> Training</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="training-hero">
+            <div class="container">
+                <h1 class="page-title">Training & Certifications</h1>
+                <p class="page-subtitle">Professional training programs and certifications to enhance my skills and expertise</p>
+            </div>
+        </section>
+
+        <section class="certificate-viewer-section">
+            <div class="container">
+                <h2 class="section-title">Certificate Gallery</h2>
+                <p class="section-subtitle">Click on any certificate icon to view the full image</p>
+                
+                <div class="certificate-icons-container">
+                    <!-- Certificate 1 -->
+                    <div class="certificate-icon-item" onclick="openCertificateModal('certificate1.jpg', 'D.El.Ed Certificate - DIET Janjgir', 'Diploma in Elementary Education completed in 2024 with 77.38% marks')">
+                        <div class="cert-icon-circle">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="cert-icon-info">
+                            <h3>D.El.Ed Certificate</h3>
+                            <p>DIET Janjgir (2024)</p>
+                            <span class="click-hint">Click to view</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 2 -->
+                    <div class="certificate-icon-item" onclick="openCertificateModal('certificate2.jpg', 'Web Development Certification', 'Advanced web technologies certification completed in 2022')">
+                        <div class="cert-icon-circle">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="cert-icon-info">
+                            <h3>Web Development</h3>
+                            <p>Online Platform (2022)</p>
+                            <span class="click-hint">Click to view</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 3 -->
+                    <div class="certificate-icon-item" onclick="openCertificateModal('training-certificate3.jpg', 'CBSE IT 402 Training Certificate', 'CBSE IT training for Class 9th and 10th completed in 2023')">
+                        <div class="cert-icon-circle">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="cert-icon-info">
+                            <h3>CBSE IT Training</h3>
+                            <p>CBSE Program (2023)</p>
+                            <span class="click-hint">Click to view</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 4 -->
+                    <div class="certificate-icon-item" onclick="openCertificateModal('training-certificate4.jpg', 'Programming Fundamentals Certificate', 'Programming in C, C++, and Java completed in 2021')">
+                        <div class="cert-icon-circle">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="cert-icon-info">
+                            <h3>Programming</h3>
+                            <p>Computer Institute (2021)</p>
+                            <span class="click-hint">Click to view</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 5 -->
+                    <div class="certificate-icon-item" onclick="openCertificateModal('training-certificate5.jpg', 'Database Management Certificate', 'MySQL database management certification completed in 2020')">
+                        <div class="cert-icon-circle">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="cert-icon-info">
+                            <h3>Database Management</h3>
+                            <p>IT Training Center (2020)</p>
+                            <span class="click-hint">Click to view</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Certificate 6 -->
+                    <div class="certificate-icon-item" onclick="openCertificateModal('training-certificate6.jpg', 'Spoken English Certificate', 'Spoken English training completed in 2023')">
+                        <div class="cert-icon-circle">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="cert-icon-info">
+                            <h3>Spoken English</h3>
+                            <p>Language Institute (2023)</p>
+                            <span class="click-hint">Click to view</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Modal -->
+        <div id="certificateModal" class="cert-modal">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeCertificateModal()">&times;</span>
+                <div class="modal-header">
+                    <h3 id="modalCertTitle">Certificate Title</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="certificate-image-container">
+                        <img id="modalCertImage" src="" alt="Certificate" class="certificate-full-image">
+                    </div>
+                    <div class="certificate-details-modal">
+                        <p id="modalCertDescription">Certificate description will appear here</p>
+                        <div class="certificate-actions">
+                            <button class="btn download-btn" onclick="downloadCertificate()">
+                                <i class="fas fa-download"></i> Download Certificate
+                            </button>
+                            <button class="btn close-btn" onclick="closeCertificateModal()">
+                                <i class="fas fa-times"></i> Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="training-details">
+            <div class="container">
+                <h2 class="section-title">Training Summary</h2>
+                
+                <div class="training-summary-cards">
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Formal Education</h3>
+                        <p>Diploma in Elementary Education (D.El.Ed) with 77.38% from DIET Janjgir (2024)</p>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Technical Training</h3>
+                        <p>Web Development, Programming (C, C++, Java), Database Management (MySQL)</p>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Teaching Training</h3>
+                        <p>CBSE IT 402 curriculum training, classroom management, educational technology</p>
+                    </div>
+                    
+                    <div class="summary-card">
+                        <div class="summary-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Language Skills</h3>
+                        <p>Spoken English training for enhanced professional communication skills</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="certificate-instructions">
+            <div class="container">
+                <div class="instructions-card">
+                    <h3><i class="fas fa-info-circle"></i> How to View Certificates</h3>
+                    <ol>
+                        <li>Click on any certificate icon above to view the full certificate image</li>
+                        <li>The certificate will open in a larger view for better readability</li>
+                        <li>Use the download button to save the certificate to your device</li>
+                        <li>Close the modal by clicking the X button or anywhere outside the image</li>
+                    </ol>
+                    <p class="note"><strong>Note:</strong> If you don't see certificate images, please ensure the image files (certificate1.jpg, certificate2.jpg, etc.) are in the same folder as this HTML file.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Umesh Banjare. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Additional script for certificate viewer -->
+    <script>
+        // Certificate Modal Functions
+        function openCertificateModal(imageSrc, title, description) {
+            const modal = document.getElementById('certificateModal');
+            const modalImage = document.getElementById('modalCertImage');
+            const modalTitle = document.getElementById('modalCertTitle');
+            const modalDescription = document.getElementById('modalCertDescription');
+            
+            // Set modal content
+            modalImage.src = imageSrc;
+            modalImage.alt = title;
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            
+            // Show modal
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+        
+        function closeCertificateModal() {
+            const modal = document.getElementById('certificateModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        }
+        
+        function downloadCertificate() {
+            const imageSrc = document.getElementById('modalCertImage').src;
+            const title = document.getElementById('modalCertTitle').textContent;
+            
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = imageSrc;
+            link.download = title.toLowerCase().replace(/\s+/g, '-') + '.jpg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('certificateModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCertificateModal();
+            }
+        });
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeCertificateModal();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -99,3 +99,61 @@ document.addEventListener('click', (event) => {
         icon.classList.add('fa-bars');
     }
 });
+
+// Certificate Modal Functions
+function openCertificateModal(imageSrc, title, description) {
+    const modal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modalCertImage');
+    const modalTitle = document.getElementById('modalCertTitle');
+    const modalDescription = document.getElementById('modalCertDescription');
+    
+    // Set modal content
+    modalImage.src = imageSrc;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+    
+    // Show modal
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+
+function closeCertificateModal() {
+    const modal = document.getElementById('certificateModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+}
+
+function downloadCertificate() {
+    const imageSrc = document.getElementById('modalCertImage').src;
+    const title = document.getElementById('modalCertTitle').textContent;
+    
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = imageSrc;
+    link.download = title.toLowerCase().replace(/\s+/g, '-') + '.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Initialize certificate modal events
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('certificateModal');
+    
+    // Close modal when clicking outside
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeCertificateModal();
+            }
+        });
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeCertificateModal();
+        }
+    });
+});

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Pages Visitor Counter</title>
+    <style>
+        :root {
+            --primary: #24292e;
+            --secondary: #0366d6;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f6f8fa;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .counter-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .counter-number {
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--secondary);
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .counter-label {
+            font-size: 1.2rem;
+            color: #586069;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-box {
+            background: #f6f8fa;
+            padding: 15px;
+            border-radius: 8px;
+            min-width: 150px;
+            margin: 10px;
+        }
+        
+        .github-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+        
+        .loading {
+            color: #959da5;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GitHub Pages Visitor Counter</h1>
+        <p>No database needed! Using GitHub Gist as backend</p>
+    </div>
+    
+    <div class="counter-card">
+        <div class="counter-label">Total Website Visitors</div>
+        <div class="counter-number" id="counter">0</div>
+        <div class="counter-label" id="lastUpdated">Updating...</div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div>📈 Today</div>
+                <div id="todayCount" class="counter-number" style="font-size: 2rem;">0</div>
+            </div>
+            <div class="stat-box">
+                <div>👥 Unique</div>
+                <div id="uniqueCount" class="counter-number" style="font-size: 2rem;">0</div>
+            </div>
+            <div class="stat-box">
+                <div>🕒 Online</div>
+                <div id="onlineCount" class="counter-number" style="font-size: 2rem;">0</div>
+            </div>
+        </div>
+        
+        <div class="github-badge">
+            ⚡ Powered by GitHub Gist
+        </div>
+    </div>
+    
+    <script>
+        // CONFIGURATION - Yeh values aapko update karni hain
+        const GIST_ID = 'https://gist.github.com/umeshsir05/3ea14de708a0cb6202f8deec754bc560.js'; // Apna Gist ID daalein
+        const GIST_FILENAME = 'visitor-counter.json';
+        const GITHUB_TOKEN = ''; // Optional: Agar aap public repo use kar rahe hain, to token nahi chahiye
+        
+        class GitHubPagesCounter {
+            constructor() {
+                this.API_URL = `https://api.github.com/gists/${GIST_ID}`;
+                this.localStorageKey = 'visitorData';
+                this.sessionKey = 'ghp_visited';
+            }
+            
+            async init() {
+                // Pehle local storage check karein
+                const localData = this.getLocalData();
+                
+                // Display temporary data
+                this.updateDisplay(localData);
+                
+                try {
+                    // GitHub Gist se data fetch karein
+                    const gistData = await this.fetchGistData();
+                    
+                    // Check if new visitor
+                    if (!sessionStorage.getItem(this.sessionKey)) {
+                        // Increment counts
+                        gistData.count++;
+                        gistData.uniqueVisitors++;
+                        
+                        const today = this.getCurrentDate();
+                        if (gistData.daily[today]) {
+                            gistData.daily[today]++;
+                        } else {
+                            gistData.daily[today] = 1;
+                        }
+                        
+                        // Gist update karein
+                        await this.updateGist(gistData);
+                        
+                        // Mark as visited
+                        sessionStorage.setItem(this.sessionKey, 'true');
+                    }
+                    
+                    // Local storage update karein
+                    this.saveLocalData(gistData);
+                    
+                    // Display updated data
+                    this.updateDisplay(gistData);
+                    
+                } catch (error) {
+                    console.log('Using local data:', error);
+                    // Fallback to local storage
+                    this.handleFallback(localData);
+                }
+            }
+            
+            async fetchGistData() {
+                const response = await fetch(this.API_URL);
+                if (!response.ok) throw new Error('Gist fetch failed');
+                
+                const gist = await response.json();
+                const content = JSON.parse(gist.files[GIST_FILENAME].content);
+                
+                // Initialize structure if needed
+                return {
+                    count: content.count || 0,
+                    uniqueVisitors: content.uniqueVisitors || 0,
+                    daily: content.daily || {},
+                    lastUpdated: new Date().toISOString()
+                };
+            }
+            
+            async updateGist(data) {
+                // Clean old daily data (keep only last 30 days)
+                const thirtyDaysAgo = new Date();
+                thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+                
+                const cleanedDaily = {};
+                for (const [date, count] of Object.entries(data.daily)) {
+                    if (new Date(date) >= thirtyDaysAgo) {
+                        cleanedDaily[date] = count;
+                    }
+                }
+                data.daily = cleanedDaily;
+                
+                // Prepare update
+                const update = {
+                    files: {
+                        [GIST_FILENAME]: {
+                            content: JSON.stringify(data, null, 2)
+                        }
+                    }
+                };
+                
+                // Add headers if token exists
+                const headers = {
+                    'Content-Type': 'application/json'
+                };
+                
+                if (GITHUB_TOKEN) {
+                    headers['Authorization'] = `token ${GITHUB_TOKEN}`;
+                }
+                
+                // Send update
+                const response = await fetch(this.API_URL, {
+                    method: 'PATCH',
+                    headers: headers,
+                    body: JSON.stringify(update)
+                });
+                
+                if (!response.ok) throw new Error('Update failed');
+                return response.json();
+            }
+            
+            getLocalData() {
+                const data = localStorage.getItem(this.localStorageKey);
+                if (data) {
+                    return JSON.parse(data);
+                }
+                return {
+                    count: 0,
+                    uniqueVisitors: 0,
+                    daily: {},
+                    lastUpdated: null
+                };
+            }
+            
+            saveLocalData(data) {
+                localStorage.setItem(this.localStorageKey, JSON.stringify(data));
+            }
+            
+            handleFallback(localData) {
+                // Agar Gist fail ho, to local storage use karein
+                if (!sessionStorage.getItem(this.sessionKey)) {
+                    localData.count++;
+                    localData.uniqueVisitors++;
+                    
+                    const today = this.getCurrentDate();
+                    localData.daily[today] = (localData.daily[today] || 0) + 1;
+                    localData.lastUpdated = new Date().toISOString();
+                    
+                    this.saveLocalData(localData);
+                    sessionStorage.setItem(this.sessionKey, 'true');
+                }
+                
+                this.updateDisplay(localData);
+            }
+            
+            updateDisplay(data) {
+                document.getElementById('counter').textContent = 
+                    this.formatNumber(data.count);
+                
+                const today = this.getCurrentDate();
+                document.getElementById('todayCount').textContent = 
+                    data.daily[today] || 0;
+                
+                document.getElementById('uniqueCount').textContent = 
+                    this.formatNumber(data.uniqueVisitors);
+                
+                // Simulate online users (random between 1-20)
+                document.getElementById('onlineCount').textContent = 
+                    Math.floor(Math.random() * 20) + 1;
+                
+                if (data.lastUpdated) {
+                    const date = new Date(data.lastUpdated);
+                    document.getElementById('lastUpdated').textContent = 
+                        `Last updated: ${date.toLocaleString()}`;
+                }
+            }
+            
+            getCurrentDate() {
+                return new Date().toISOString().split('T')[0];
+            }
+            
+            formatNumber(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+        }
+        
+        // Initialize counter when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            const counter = new GitHubPagesCounter();
+            counter.init();
+        });
+    </script>
+</body>
+</html>

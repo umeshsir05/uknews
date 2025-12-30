@@ -134,17 +134,7 @@
         <div class="container">
             <p>&copy; 2025 Umesh Banjare. All rights reserved.</p>
 
-<div class="footer-middle">
-                <!-- Visitor Counter -->
-                <div class="visitor-counter">
-                    <div class="counter-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <div class="counter-info">
-                        <div class="counter-label">Visitor Count</div>
-                        <div class="counter-number" id="visitorCount">Loading...</div>
-                    </div>
-                </div>
+<div class="footer-middle">        
 
             <div class="social-links">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -153,35 +143,10 @@
             </div>
         </div>
     </footer>
-<!-- GitHub Gist Script for Visitor Counter -->
-    <script src="https://gist.github.com/umeshsir05/3ea14de708a0cb6202f8deec754bc560.js"></script>
+
     
     <script src="script.js"></script>
     
-    <!-- Visitor Counter Script -->
-    <script>
-        // This function will be called by the GitHub Gist
-        function updateVisitorCount(count) {
-            const counterElement = document.getElementById('visitorCount');
-            if (counterElement) {
-                // Format the number with commas
-                const formattedCount = count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                counterElement.textContent = formattedCount;
-            }
-        }
-        
-        // Fallback function in case GitHub Gist fails
-        function loadFallbackCounter() {
-            const counterElement = document.getElementById('visitorCount');
-            if (counterElement && counterElement.textContent === 'Loading...') {
-                // Set a fallback count (you can manually update this)
-                counterElement.textContent = "1,234";
-            }
-        }
-        
-        // Set timeout for fallback
-        setTimeout(loadFallbackCounter, 3000);
-    </script>
-    <script src="script.js"></script>
+    
 </body>
 </html>
